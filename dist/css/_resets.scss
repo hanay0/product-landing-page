@@ -1,6 +1,6 @@
 $primary-color: #333333;
 $secondary-color: #444444;
-$overlay-color: rgba(0, 0, 0, 0.7);
+$overlay-color: rgba(68, 68, 68, 0.849);
 $hover-color:#818181;
 
 * {
@@ -47,4 +47,14 @@ img {
     &:hover {
         background-color: $secondary-color;
     }
+}
+
+// overlay section
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $overlay-color;
 }
