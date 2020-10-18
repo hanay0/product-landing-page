@@ -9,6 +9,7 @@
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/simple-lightbox.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 
 </head>
@@ -51,9 +52,76 @@
 </section>
 
 
+<!-- start gallery section -->
+<section class="third-section">
+    <div class="gallery">
+        <a href="dist/img/watch5.jpg" class="big"><img src="dist/img/watch5.jpg" alt="img1"></a>
+        <a href="dist/img/watch1.jpg" class="big"><img src="dist/img/watch1.jpg" alt="img2"></a>
+        <a href="dist/img/watch-3.jpg" class="big"><img src="dist/img/watch-3.jpg" alt="img3"></a>
+        <a href="dist/img/watch4.jpg" class="big"><img src="dist/img/watch4.jpg" alt="img4"></a>
+    </div>
+
+</section>
 
 
+<!-- start footer -->
+<footer class="footer-section">
+    <div class="container">
+        <!-- first grid item -->
+        <div>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <a href="http://twitter.com">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="http://facebook.com">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="http://youtube.com">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
+            <!-- second grid item -->
+        <div>
+            <h3>company info</h3>
+            <ul>
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Services</a></li>
+            </ul>
+        </div>
 
+        <!-- third grid item -->
+        <div>
+            <h3>Blog Posts</h3>
+            <ul>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+            </ul>
+        </div>
+
+        <!-- fourth grid item -->
+        <div>
+            <h3>Subscribe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <form name="email-form" method="POST" data-netlify="true">
+                <div class="email-form">
+                    <span class="form-control-wrap">
+                        <input type="email" name="email" id="email" size="40" class="form-control" placeholder="Email">
+                    </span>
+                    <button type="submit" class="form-control submit">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+   
+</footer>
 
 
 
@@ -64,9 +132,11 @@
 
     <!-- jquery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous"></script>
-        <!-- lightbox library -->
-    <script src="dist/js/simple-lightbox.min.js"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="dist/js/simple-lightbox.js"></script>
+    <script>
+        (function() {
+        const $gallery = new SimpleLightbox('.gallery a', {});
+    })();
+    </script>
 </body>
 </html>
